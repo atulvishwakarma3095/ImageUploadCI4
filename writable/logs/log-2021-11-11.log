@@ -1,0 +1,61 @@
+CRITICAL - 2021-11-11 03:07:15 --> Undefined variable: data
+#0 C:\xampp\htdocs\UploadImg\app\Controllers\ProductController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(824): App\Controllers\ProductController->create()
+#2 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#3 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\UploadImg\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\UploadImg\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-11 04:02:33 --> Class 'App\Models\Models' not found
+#0 C:\xampp\htdocs\UploadImg\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\UploadImg\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\UploadImg\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Prod...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Prod...')
+#4 C:\xampp\htdocs\UploadImg\app\Controllers\ProductController.php(22): spl_autoload_call('App\\Models\\Prod...')
+#5 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(824): App\Controllers\ProductController->store()
+#6 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#7 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\UploadImg\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 04:03:02 --> Access level to App\Models\Products::$table must be protected (as in class CodeIgniter\Model) or weaker
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-11 04:04:26 --> Access level to App\Models\Products::$table must be protected (as in class CodeIgniter\Model) or weaker
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-11 05:27:35 --> Undefined variable: product
+#0 C:\xampp\htdocs\UploadImg\app\Views\products\edit.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\UploadImg\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\UploadImg\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\UploadImg\system\Common.php(1097): CodeIgniter\View\View->render('products/edit', Array, true)
+#4 C:\xampp\htdocs\UploadImg\app\Controllers\ProductController.php(44): view('products/edit', Array)
+#5 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(824): App\Controllers\ProductController->edit('1')
+#6 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#7 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\UploadImg\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 06:16:07 --> Undefined variable: products
+#0 C:\xampp\htdocs\UploadImg\app\Controllers\ProductController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(824): App\Controllers\ProductController->update('1')
+#2 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#3 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\UploadImg\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 06:25:00 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(824): App\Controllers\ProductController->update('1')
+#1 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#2 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\UploadImg\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-11 06:27:57 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(824): App\Controllers\ProductController->update('1')
+#1 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#2 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\UploadImg\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-11 06:33:12 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(824): App\Controllers\ProductController->update('1')
+#1 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#2 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\UploadImg\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
