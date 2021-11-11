@@ -38,6 +38,7 @@ $routes->get('addproduct','ProductController::create');
 $routes->post('productstore','ProductController::store');
 $routes->get('product/edit/(:num)','ProductController::edit/$1');
 $routes->post('product/update/(:num)','ProductController::update/$1');
+$routes->get('product/delete/(:num)','ProductController::delete/$1');
 
 
 /*

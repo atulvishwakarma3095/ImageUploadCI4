@@ -71,7 +71,19 @@ class ProductController extends BaseController
                 'img'=>$FilenewName,
             ];
             $product->update($id,$data);
-            return redirect()->to('/products')->with('status','Product Data saved..!');
+            return redirect()->to('/products')->with('status','Product Data Updated..!');
          
+    }
+    public function delete($id){
+        $product= new Products();
+        $data=$product->find($id);
+        $imagefile=$data['img'];
+        if(file_exists("uploads/".$imagefile))
+        {
+            unlink("uploads/".$imagefile);
+        }
+        $product->delete($id);
+         return redirect()->to('/products')->with('status','Product has been delete..!');
+
     }
 }

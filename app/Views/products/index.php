@@ -40,7 +40,7 @@
 				  					<td><img src="<?= base_url('/uploads/'.$item['img'])?>" height="100px" width="100px"></td>
 				  					<td>
 				  						<a href="<?= base_url('product/edit/'.$item['id'])?>" class="btn btn-success btn-sm">Edit</a>
-				  						<a href="" class="btn btn-danger btn-sm">Delete</a>
+				  						<a href="<?= base_url('product/delete/'.$item['id'])?>" class="btn btn-danger btn-sm">Delete</a>
 				  					</td>
 				  				</tr>
 				  			<?php endforeach;?>

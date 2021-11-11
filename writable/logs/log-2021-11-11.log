@@ -59,3 +59,17 @@ CRITICAL - 2021-11-11 06:33:12 --> Call to a member function isValid() on null
 #2 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\xampp\htdocs\UploadImg\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2021-11-11 07:16:05 --> Undefined index: image
+#0 C:\xampp\htdocs\UploadImg\app\Controllers\ProductController.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 80, Array)
+#1 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(824): App\Controllers\ProductController->delete('1')
+#2 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#3 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\UploadImg\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 07:18:28 --> Argument 2 passed to CodeIgniter\BaseModel::delete() must be of the type bool, array given, called in C:\xampp\htdocs\UploadImg\app\Controllers\ProductController.php on line 85
+#0 C:\xampp\htdocs\UploadImg\app\Controllers\ProductController.php(85): CodeIgniter\BaseModel->delete('1', Array)
+#1 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(824): App\Controllers\ProductController->delete('1')
+#2 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#3 C:\xampp\htdocs\UploadImg\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\UploadImg\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
